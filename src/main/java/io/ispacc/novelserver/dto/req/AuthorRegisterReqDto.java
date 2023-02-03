@@ -1,8 +1,8 @@
 package io.ispacc.novelserver.dto.req;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.*;
 import lombok.Data;
-import org.wildfly.common.annotation.NotNull;
 
 /**
  * 作家注册 请求DTO

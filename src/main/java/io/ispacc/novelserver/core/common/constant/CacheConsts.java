@@ -30,6 +30,7 @@ public class CacheConsts {
      * 首页友情链接缓存
      */
     public static final String HOME_FRIEND_LINK_CACHE_NAME = "homeFriendLinkCache";
+    public static final String IMG_VERIFY_CODE_CACHE_KEY = "imgVerifyCodeCache";
 
     /**
      * 缓存配置常量

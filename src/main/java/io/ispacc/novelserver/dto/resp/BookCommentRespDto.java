@@ -2,11 +2,13 @@ package io.ispacc.novelserver.dto.resp;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import io.github.xxyopen.novel.core.json.serializer.UsernameSerializer;
+import io.ispacc.novelserver.core.json.serializer.UsernameSerializer;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 import lombok.Data;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -18,7 +20,10 @@ import java.util.List;
  */
 @Data
 @Builder
-public class BookCommentRespDto {
+public class BookCommentRespDto implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 123423432423423L;
 
     @Schema(description = "评论总数")
     private Long commentTotal;

@@ -62,7 +62,7 @@ public class CacheConfig {
 
         Map<String, RedisCacheConfiguration> cacheMap = new LinkedHashMap<>(
                 CacheConsts.CacheEnum.values().length);
-        // 类型推断 var 非常适合 for 循环，JDK 10 引入，JDK 11 改进
+
         for (var c : CacheConsts.CacheEnum.values()) {
             if (c.isRemote()) {
                 if (c.getTtl() > 0) {

@@ -1,6 +1,6 @@
 package io.ispacc.novelserver.dto.es;
 
-import io.github.xxyopen.novel.dao.entity.BookInfo;
+import io.ispacc.novelserver.dao.entity.BookInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

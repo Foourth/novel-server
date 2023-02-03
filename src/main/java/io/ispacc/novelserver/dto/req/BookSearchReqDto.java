@@ -1,19 +1,19 @@
 package io.ispacc.novelserver.dto.req;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import io.github.xxyopen.novel.core.common.req.PageReqDto;
+import io.ispacc.novelserver.core.common.req.PageReqDto;
 import io.swagger.v3.oas.annotations.Parameter;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
 /**
  * 小说搜索 请求DTO
- *
- * @author xiongxiaoyang
  * @date 2022/5/16
  */
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class BookSearchReqDto extends PageReqDto {
 
