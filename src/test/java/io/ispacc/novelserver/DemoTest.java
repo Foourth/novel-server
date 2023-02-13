@@ -31,19 +31,9 @@ public class DemoTest {
 
     @Test
     void method2() {
-        StringBuilder sb = new StringBuilder();
-        System.out.println(sb.length());
-        System.out.println(sb.capacity());
-        System.out.println("-----------------------");
-        sb.append("afawfwfwfwfwfwfwfwafawfwaaaaaaaaaaf");
-        System.out.println(sb.length());
-        System.out.println(sb.capacity());
-        System.out.println("-----------------------");
-        sb.append("feferfefwfwfwfwfwfwfwf");
-        System.out.println(sb.length());
-        System.out.println(sb.capacity());
-        StringBuilder sb1 = new StringBuilder();
-        System.out.println(sb1.toString());
+        String str = "123";
+        String str1 = Integer.valueOf(123).toString();
+        System.out.println(str.equals(str1));
     }
 }
 

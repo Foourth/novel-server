@@ -1,7 +1,10 @@
 package io.ispacc.novelserver.dto.resp;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -13,6 +16,9 @@ import java.io.Serializable;
  * @date 2022/5/13
  */
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class HomeBookRespDto implements Serializable {
 
     @Serial
